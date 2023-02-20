@@ -1,0 +1,15 @@
+site_name: 'asdasd'
+docs_dir: '../../docs/pt'                           # Where to find the English markdown files
+site_dir: '../../generated/pt'                      # Where to put the English HTML files
+
+theme:
+  name: material
+  language: pt
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Português
+      link: /pt/
+      lang: pt
