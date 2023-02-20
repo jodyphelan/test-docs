@@ -41,13 +41,13 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
-      - run: mkdocs build -f config/en/mkdocs.yml
-      - run: mkdocs build -f config/pt/mkdocs.yml
+      - run: mkdocs build -f docs/config/en/mkdocs.yml
+      - run: mkdocs build -f docs/config/pt/mkdocs.yml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'generated'
+          path: 'docs/build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

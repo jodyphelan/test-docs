@@ -1,6 +1,6 @@
 site_name: 'asdasd'
 docs_dir: '../../docs/pt'                           # Where to find the English markdown files
-site_dir: '../../generated/pt'                      # Where to put the English HTML files
+site_dir: '../../build/pt'                      # Where to put the English HTML files
 
 theme:
   name: material
@@ -8,8 +8,8 @@ theme:
 extra:
   alternate:
     - name: English
-      link: /en/ 
+      link: https://jodyphelan.github.io/test-docs/en/
       lang: en
     - name: Português
-      link: /pt/
+      link: https://jodyphelan.github.io/test-docs/pt/
       lang: pt
