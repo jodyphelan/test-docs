@@ -1,0 +1,23 @@
+site_name: 'asdasd'
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.tooltips
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.keys
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+extra_css:
+  - stylesheets/extra.css
