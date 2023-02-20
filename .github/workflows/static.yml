@@ -32,6 +32,17 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: build docs
+        uses: actions/setup-python@v4
+        with: 
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: mkdocs build -f config/en/mkdocs.yml
+      - run: mkdocs build -f config/pt/mkdocs.yml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
