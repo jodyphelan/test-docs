@@ -5,6 +5,8 @@ theme:
   language: en
   features:
     - content.tooltips
+    - navigation.instant
+    - navigation.tabs
 
 
 markdown_extensions:
